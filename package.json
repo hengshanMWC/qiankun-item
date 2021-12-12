@@ -1,0 +1,30 @@
+{
+  "name": "qiankun-item",
+  "version": "1.0.0",
+  "description": "qiankunDemo",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "examples:install": "npm-run-all --serial install:*",
+    "examples:start": "npm-run-all --parallel start:*",
+    "install:main": "cd examples/qiankun-vue2 && yarn",
+    "install:vue3": "cd examples/qiankun-vue3 && yarn",
+    "install:react": "cd examples/qiankun-react && yarn",
+    "install:angular": "cd examples/qiankun-angular && yarn",
+    "start:main": "cd examples/qiankun-vue2 && yarn start",
+    "start:vue3": "cd examples/qiankun-vue3 && yarn start",
+    "start:react": "cd examples/qiankun-react && yarn start",
+    "start:angular": "cd examples/qiankun-angular && yarn start"
+  },
+  "keywords": [
+    "qiankun"
+  ],
+  "author": "mawencan",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

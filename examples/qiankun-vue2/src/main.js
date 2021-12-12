@@ -28,6 +28,12 @@ registerMicroApps([
     entry: '//localhost:8003', // 微应用入口
     container: '#app', // 微应用的容器
     activeRule: '/angular' // url匹配微应用规则
+  },
+  {
+    name: 'qiankun-svelte', // 微应用的名称
+    entry: '//localhost:8004', // 微应用入口
+    container: '#app', // 微应用的容器
+    activeRule: '/svelte' // url匹配微应用规则
   }
 ])
 start()
